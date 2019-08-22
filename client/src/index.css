@@ -26,7 +26,7 @@ body {
   padding: 1rem;
   cursor: pointer;
   position: relative;
-  margin: 1rem 2rem;
+  margin: 2rem 2rem;
   border-radius: 10px;
   
 }
@@ -64,29 +64,31 @@ body {
   width: 90%;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column-reverse;
+  align-items: center;
   background: #fff;
+  text-align: center;
+}
+
+.saved-container h3 {
+  margin: auto;
+  font-size: 2rem;
 }
 
 .saved-list {
   background-color: #fff;
-  border: 0;
-  /* box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
-    0 2px 4px rgba(0, 0, 0, 0.24); */
   padding: 1rem;
   cursor: pointer;
   position: relative;
-  margin: 1rem auto;
+  margin: auto;
   width: 90%;
-  height: 90px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.saved-list h3 {
-  margin-right: 10px;
-}
+
 
 .saved-list a {
   text-decoration: none;
@@ -102,6 +104,12 @@ body {
   border-radius: 10px;
 }
 
+.saved-movie:hover {
+  background-color: #cfa50d;
+  color: #000;
+  cursor: pointer;
+}
+
 .saved-movie a {
   text-decoration: none;
 }
@@ -109,8 +117,7 @@ body {
 .saved-active {
   display: flex;
   justify-content: center;
-  /* border: 1px solid grey; */
-  padding: 5px;
+  padding: 0.3rem;
   text-decoration: none;
   border-radius: 10px;
   background: #000;
